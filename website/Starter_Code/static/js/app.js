@@ -21,11 +21,8 @@ function buildMetadata(shipwreckName) {
       panel.append("h6").text(`${key}: ${result[key]}`);
     });
     
-    // Update the shipwreck image if available
-    if (result.url) {
-      d3.select("#shipwreck-image").attr("src", result.url);
-    }
-
+  
+    
     // Update the map with shipwreck location
     updateMap(result.lat, result.long);
     }
@@ -34,16 +31,21 @@ function buildMetadata(shipwreckName) {
 
 // Function to update the map with shipwreck location
 function updateMap(lat, lng) {
+  // Check if map already exists, if so, remove it
+  if (window.map && typeof window.map.remove === 'function') {
+    window.map.remove();
+  }
+
   // Initialize the map centered at the shipwreck location
-  let map = L.map('map').setView([lat, lng], 10);
+  window.map = L.map('map').setView([lat, lng], 5);
 
   // Add tile layer for the map (you can choose different tile providers)
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
+  }).addTo(window.map);
 
   // Add a marker at the shipwreck location
-  L.marker([lat, lng]).addTo(map)
+  L.marker([lat, lng]).addTo(window.map)
     .bindPopup('Shipwreck Location')
     .openPopup();
 }
