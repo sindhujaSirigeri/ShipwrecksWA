@@ -2,8 +2,9 @@
 # ShipwrecksWA
 Project Overview is Based on Data Visualisation
 
-# Maritime Archaeology Shipwreck Data
+**Members**: Sindhuja Sirigeri (Team co-ordinator), Kristina Abramoff, Meysam Seifaddini, Rekha Renukappa
 
+# Maritime Archaeology Shipwreck Data
 
 This Project brings an remarkable interaction exploration of Ships dataset from various individuals, using the D3.js library to parse and visualize from the comprehensive JSON dataset. The initiative aims to reveil the built and lost ships and dememonastrate the purpose of manufacturing the ships. Each ship has its own history of purpess,built,lost etc.The variety of Data visualization is shown in by selecting the drop down regions of the ship area and next by selecting the ship name . The visualization effort extends to display demographic metadata and content of each datset is explained. The project is hosted on GitHub Page,inviting users to engage with the meainingfull and interactive information. This project highlights is the data visualization tools and understand the concept of open data and web technologies to create informative and engaging tools for historical exploration. By transforming the "Shipwrecks" dataset into an interactive map and webpage, we provide a valuable resource for educators, historians, and the general public interested in Western Australia's maritime heritage.
 
@@ -15,21 +16,27 @@ Explore the Maritime Archaeology Shipwreck Database:  [https://catalogue.data.wa
 
 The "Shipwrecks" dataset, available on the Government of Western Australia's data catalog website, provided comprehensive information about historical shipwrecks along the Western Australian coast. This dataset was formatted in GeoJSON, making it ideal for spatial analysis and visualization. The project's objective was to leverage this rich dataset to create an engaging and informative interactive map and webpage that would allow users to explore the locations and details of these shipwrecks.
 
-### Source :Western Australian Data Latest up date: 10/1/2018 Metadata last updated: 4/7/2024 Dataset Custodian: Jeremy Green
+### Source 
+Western Australian Data : https://catalogue.data.wa.gov.au/dataset/shipwrecks
+
+Latest update: 10/1/2018 
+
+Metadata last updated: 4/7/2024 
+
+Dataset Custodian: Jeremy Green
+
+**Plugin used**:  https://github.com/lennardv2/Leaflet.awesome-markers
 
 ## Technologies Used are:
 
 1 Data Acquisition and Preparation:
-
 -   Obtained the "Shipwrecks" dataset from the Government of Western Australia's open data portal.
 -   Processed the GeoJSON data to ensure compatibility with web mapping tools.
 
 2 Interactive Map Development:
-
 -   Utilized mapping libraries such as Leaflet and Python to visualize the shipwreck data. Incorporated features to allow users to interact with the map, including zooming, panning, and clicking on shipwreck locations to reveal additional information.
 
 3 Webpage Creation:
-
 -   Developed a user-friendly webpage to host the interactive map.
 -   Included supplementary information about the shipwrecks, such as historical context and significance, to enhance the user experience.
 
