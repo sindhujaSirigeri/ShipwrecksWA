@@ -14,7 +14,7 @@ function buildMetadata(shipwreckName) {
     panel.html(""); 
     
     // Define the selected categories
-    let selectedCategories = ["when_lost", "where_lost", "lat", "long", "country_bu", "url"];
+    let selectedCategories = ["name","when_lost", "where_lost", "lat", "long", "country_bu", "url"];
     
     // Append new tags for each key-value pair in the selected categories
     selectedCategories.forEach((key) => {
@@ -46,8 +46,9 @@ function updateMap(lat, lng) {
 
   // Add a marker at the shipwreck location
   L.marker([lat, lng]).addTo(window.map)
-    .bindPopup('Shipwreck Location')
-    .openPopup();
+  // .bindPopup(`Shipwreck Name: ${shipwreckName}`)
+  // .openPopup()
+  ;
 }
 
 
