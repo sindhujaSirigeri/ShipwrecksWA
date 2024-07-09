@@ -13,16 +13,23 @@ function buildMetadata(shipwreckName) {
     // Use `.html("") to clear any existing metadata
     panel.html(""); 
     
-    // Define the selected categories
-    let selectedCategories = ["name","when_lost", "where_lost", "lat", "long", "country_bu", "url"];
+    // Define the selected categories with their display names
+    let selectedCategories = {
+      "name": "Shipwreck Name",
+      "official_n":"Offical Number",
+      "when_lost": "When Lost",
+      "where_lost": "Where Lost",
+      "industry_1" : "Purpose",
+      "lat": "Latitude",
+      "long": "Longitude",
+      "country_bu": "Country Built",
+      "url": "URL"
+    };
     
     // Append new tags for each key-value pair in the selected categories
-    selectedCategories.forEach((key) => {
-      panel.append("h6").text(`${key}: ${result[key]}`);
+    Object.keys(selectedCategories).forEach((key) => {
+      panel.append("h6").text(`${selectedCategories[key]}: ${result[key]}`);
     });
-    
-  
-    
     // Update the map with shipwreck location
     updateMap(result.lat, result.long);
     }
@@ -50,8 +57,6 @@ function updateMap(lat, lng) {
   // .openPopup()
   ;
 }
-
-
 
 // Function to clean and categorize region names
 function cleanAndCategorizeRegion(region) {
