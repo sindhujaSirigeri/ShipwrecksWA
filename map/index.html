@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipwrecks Of WA</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- D3 library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Local Leaflet Awesome Markers CSS and JS -->
+  <link rel="stylesheet" href="static/css/leaflet.awesome-markers.css">
+  <script src="static/js/leaflet.awesome-markers.js"></script>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- noUiSlider CSS and JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <style>
+    /* Ensure the map takes up the full viewport height */
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    #map {
+      height: 100vh; /* Full viewport height */
+    }
+    #controls {
+      position: fixed;
+      top: 50px;
+      right: 50px;
+      z-index: 1000;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    #regionFilter, #industryFilters, #unknownFilter, #timeSlider {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    #timeSlider {
+      margin: 20px 0;
+    }
+    .noUi-handle {
+      width: 14px;
+      height: 14px;
+      top: -5px;
+      border-radius: 50%;
+      background: #337ab7;
+      border: 1px solid #ccc;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
+    }
+    /* Legend styling */
+    .legend {
+      background: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      position: fixed;
+      bottom: 30px;
+      right: 50px;
+      z-index: 1000;
+    }
+    .legend h4 {
+      margin: 0;
+      font-size: 16px;
+    }
+    .legend div {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+    .legend i {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <!-- Region filter -->
+    <label for="regionFilter"><strong>Filter by Region:</strong></label>
+    <select id="regionFilter">
+      <option value="All">All</option>
+      <!-- Options will be dynamically added by JavaScript -->
+    </select>
+    <hr> <!-- Separator for clarity -->
+
+    <!-- Industry checkboxes -->
+    <label><strong>Filter by Industry:</strong></label>
+    <div id="industryFilters">
+      <label><input type="checkbox" value="" checked> No Industry</label><br>
+      <label><input type="checkbox" value="Defence" checked> Defence</label><br>
+      <label><input type="checkbox" value="Transport" checked> Transport</label><br>
+      <label><input type="checkbox" value="Services" checked> Services</label><br>
+      <label><input type="checkbox" value="Fisheries" checked> Fisheries</label><br>
+      <label><input type="checkbox" value="Recreation" checked> Recreation</label><br>
+    </div>
+    <hr> <!-- Separator for clarity -->
+
+    <!-- Unknown When Lost checkbox -->
+    <label><strong>Filter by Unknown When Lost:</strong></label>
+    <div id="unknownFilter">
+      <label><input type="checkbox" value="unknown" checked> Unknown When Lost</label><br>
+    </div>
+    <hr> <!-- Separator for clarity -->
+
+    <!-- Time Slider -->
+    <label for="timeSlider"><strong>Filter by Year Lost:</strong></label>
+    <div id="timeSlider"></div>
+    <div id="sliderValue">Year Range: <span id="yearRange">1800 - 2020</span></div>
+  </div>
+
+  <!-- map div -->
+  <div id="map"></div>
+
+  <!-- Legend div -->
+  <div id="legend" class="legend"></div>
+
+  <!-- JavaScript file -->
+  <script type="text/javascript" src="static/js/codefile.js"></script>
+
+</body>
+</html>
