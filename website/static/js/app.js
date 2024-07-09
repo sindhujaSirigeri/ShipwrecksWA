@@ -58,8 +58,6 @@ function updateMap(lat, lng) {
   ;
 }
 
-
-
 // Function to clean and categorize region names
 function cleanAndCategorizeRegion(region) {
   // Remove content within parentheses and trim whitespace
