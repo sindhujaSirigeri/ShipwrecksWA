@@ -25,7 +25,9 @@ The "Shipwrecks" dataset, available on the Government of Western Australia's dat
 Western Australian Data : https://catalogue.data.wa.gov.au/dataset/shipwrecks
 
 Latest update: 10/1/2018 
-Metadata last updated: 4/7/2024 
+
+Metadata last updated: 4/7/2024
+
 Dataset Custodian: Jeremy Green
 
 **Plugin used**:  https://github.com/lennardv2/Leaflet.awesome-markers
