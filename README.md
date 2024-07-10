@@ -15,8 +15,6 @@ This Project brings an remarkable interaction exploration of Ships dataset from 
 ![image](https://github.com/sindhujaSirigeri/ShipwrecksWA/assets/132906670/31d49f12-3105-4cf8-b41c-c4212f1b46d1)
 
 
-Explore the Maritime Archaeology Shipwreck Database:  [https://catalogue.data.wa.gov.au/dataset/shipwrecks](https://catalogue.data.wa.gov.au/dataset/shipwrecks)
-
 ## Data
 The "Shipwrecks" dataset, available on the Government of Western Australia's data catalog website, provided comprehensive information about historical shipwrecks along the Western Australian coast. This dataset was formatted in GeoJSON, making it ideal for spatial analysis and visualization. The project's objective was to leverage this rich dataset to create an engaging and informative interactive map and webpage that would allow users to explore the locations and details of these shipwrecks.
 
