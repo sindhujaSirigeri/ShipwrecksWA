@@ -8,9 +8,10 @@ Project Overview is Based on Data Visualisation
 
 This Project brings an remarkable interaction exploration of Ships dataset from various individuals, using the D3.js library to parse and visualize from the comprehensive JSON dataset. The initiative aims to reveil the built and lost ships and dememonastrate the purpose of manufacturing the ships. Each ship has its own history of purpess,built,lost etc.The variety of Data visualization is shown in by selecting the drop down regions of the ship area and next by selecting the ship name . The visualization effort extends to display demographic metadata and content of each datset is explained. The project is hosted on GitHub Page,inviting users to engage with the meainingfull and interactive information. This project highlights is the data visualization tools and understand the concept of open data and web technologies to create informative and engaging tools for historical exploration. By transforming the "Shipwrecks" dataset into an interactive map and webpage, we provide a valuable resource for educators, historians, and the general public interested in Western Australia's maritime heritage.
 
-![alt text](image.png)
+![image](https://github.com/sindhujaSirigeri/ShipwrecksWA/assets/132906670/f7af8452-0f64-4efe-b8a0-0ed4c4f8da67)
 
-![alt text](image-1.png)
+![image](https://github.com/sindhujaSirigeri/ShipwrecksWA/assets/132906670/31d49f12-3105-4cf8-b41c-c4212f1b46d1)
+
 
 ## Deployment
 
