@@ -15,7 +15,6 @@ This Project brings an remarkable interaction exploration of Ships dataset from 
 ![image](https://github.com/sindhujaSirigeri/ShipwrecksWA/assets/132906670/31d49f12-3105-4cf8-b41c-c4212f1b46d1)
 
 
-## Deployment
 Explore the Maritime Archaeology Shipwreck Database:  [https://catalogue.data.wa.gov.au/dataset/shipwrecks](https://catalogue.data.wa.gov.au/dataset/shipwrecks)
 
 ## Data
