@@ -11,7 +11,7 @@ This Project brings an remarkable interaction exploration of Ships dataset from 
 ### Map
 ![image](https://github.com/sindhujaSirigeri/ShipwrecksWA/assets/132906670/f7af8452-0f64-4efe-b8a0-0ed4c4f8da67)
 
-**Instructions for Using the Interactive**
+**Instructions for Using the Interactive Map**
 
 Use the interactive features of the map to explore the shipwreck's location. You can zoom in and out using the map controls or your mouse scroll wheel. Clicking on the marker will display a popup with the shipwreck's name and location details.
 
