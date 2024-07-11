@@ -11,9 +11,22 @@ This Project brings an remarkable interaction exploration of Ships dataset from 
 ### Map
 ![image](https://github.com/sindhujaSirigeri/ShipwrecksWA/assets/132906670/f7af8452-0f64-4efe-b8a0-0ed4c4f8da67)
 
+**Instructions for Using the Interactive**
+
+Use the interactive features of the map to explore the shipwreck's location. You can zoom in and out using the map controls or your mouse scroll wheel. Clicking on the marker will display a popup with the shipwreck's name and location details.
+
+The filter section allows you to refine your search by selecting specific regions, the purpose or industry of the ship, and the time period in which it was lost. You can use these filters together or separately to narrow down the dataset.This enables you to analyze specific subsets of the shipwreck database with ease.
+
 ### Dashboard
 ![image](https://github.com/sindhujaSirigeri/ShipwrecksWA/assets/132906670/31d49f12-3105-4cf8-b41c-c4212f1b46d1)
 
+**Instructions for Using the Interactive Dashboard**
+
+To begin exploring the shipwreck data, start by selecting a region of interest from the "Shipwreck Region" dropdown menu. This will filter the dataset to display only the shipwrecks located within the chosen region. Once you have selected a region, proceed to the "Shipwreck Name" dropdown menu, where you can select a specific shipwreck from the filtered list.
+
+Upon selecting a shipwreck, the map and metadata panel will automatically update to display detailed information about the chosen shipwreck. The "Ship Info" section will provide key details such as the name of the shipwreck, the date it was lost, the location where it was lost, its latitude and longitude coordinates, the country of build, and a URL link (if available).
+
+Additionally, the map will pinpoint the exact location of the shipwreck, allowing you to visually explore its position. Use the interactive features of the map to zoom in and out. 
 
 ## Data
 The "Shipwrecks" dataset, available on the Government of Western Australia's data catalog website, provided comprehensive information about historical shipwrecks along the Western Australian coast. This dataset was formatted in GeoJSON, making it ideal for spatial analysis and visualization. The project's objective was to leverage this rich dataset to create an engaging and informative interactive map and webpage that would allow users to explore the locations and details of these shipwrecks.
@@ -52,3 +65,11 @@ This project demonstrates the potential of open data and web technologies to cre
 Throughout the project, significant efforts were made to address ethical considerations, particularly regarding the sensitive nature of the shipwreck data. The project also adhered to data usage policies outlined by the Government of Western Australia, ensuring compliance with legal and ethical standards. No personal data that could interfere with privacy policies was included in the project. The dataset was sourced from the authentic Government of Western Australia website, ensuring its credibility and adherence to data usage policies and ethical standards.
 
 **Tools Used**: Python, Javascript, HTML, Leaflet.js library, CSS…
+
+**References for any code used that is not our own** 
+
+Html, JS and CSS - Chatgpt and stackoverflow; 
+
+Plugin usage - https://github.com/lennardv2/Leaflet.awesome-markers;
+
+Readme file - stackedit
